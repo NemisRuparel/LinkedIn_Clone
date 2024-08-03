@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar"id="navigation">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notification</span></a></li>
+
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+
+                <img src="images/me.png" class="nav-profile-img" onclick="toggleMenu()"></a>
+
+            </div>
+        </div>
+ <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+
+                    <img src="images/me.png" class="nav-profile-img">
+                    <div>
+                        <h3>Nemis Ruparel</h3>
+                        
+                        <a href="profile.html"> see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- ----navbar end---- -->
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+
+                <img src="images/cover.jpeg" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/me.png" alt="">
+                    <h1>Ruparel Nemis</h1>
+                    <h3>Bytes of wisdom in a world of data 👨🏻‍💻 | Web Developer</h3>
+                    <ul>
+                        <li>Profile Views<span>163</span></li>
+                        <li>Post Impressions<span>92</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/items.png" alt="">Saved items</a>
+                    <a href="#"><img src="images/premium.png" alt="">Try Premium for ₹0</a>
+
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <br>
+                <a href="#"><img src="images/recent.png">Web Development</a>
+                <a href="#"><img src="images/recent.png">User Interface</a>
+                <a href="#"><img src="images/recent.png">Online Learning</a>
+                <a href="#"><img src="images/recent.png">Code Better</a>
+                <a href="#"><img src="images/recent.png">Group Learning</a>
+                <br>
+                <h3>GROUPS</h3>
+                <br>
+                <a href="#"><img src="images/group.png">Microsoft</a>
+                <a href="#"><img src="images/group.png">Javascript</a>
+                <a href="#"><img src="images/group.png">Python</a>
+                <br>
+                <h3>HASHTAG</h3>
+                <br>
+                <a href="#"><img src="images/hashtag.png">webdevelopment</a>
+                <a href="#"><img src="images/hashtag.png">userinterface</a>
+                <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/me.png">
+                    <textarea rows="2" placeholder="Start a post, try writing with AI"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/media.png">Media</li>
+                    <li><img src="images/calendar.png">Event</li>
+                    <li><img src="images/article.png">Write article</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort By : <span><b>Top</b> <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/me.png">
+                    <div>
+                        <h1>
+                            Nemis Ruparel
+                        </h1>
+                        <small>Bytes of wisdom in a world of data 👨🏻‍💻 | Web Developer</small>
+                        <small>1mo ago &middot; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                            </svg></small>
+                    </div>
+                </div>
+                <p>🚀 Thrilled to share a milestone! 🚀I’ve just earned the Gold Badge on CodeChef for maintaining a
+                    50-day coding streak!
+                    <br><br>
+                    🎉💻This journey has been a testament to the power of consistency, dedication, and continuous
+                    learning. Each day presented new challenges and opportunities to grow as a coder, and I’m proud of
+                    the progress made.
+                    <br><br>
+                    Here’s to many more days of coding and achieving new heights!
+                    <br><br>
+                </p>
+                <div class="hashtag">
+                    <a href="#">#CodeChef #CodingStreak #AchievementUnlocked #Consistency #ContinuousLearning
+                        #ProudCoder #TechJourney</a>
+                </div>
+                <img src="images/POST-1.jpeg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/like.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">Google and 1,975 others</span>
+                    </div>
+                    <span>79 comments &middot; 15 reposts</span>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="images/thumbsup.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/speech-bubble.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blank">
+
+            </div>
+            <hr>
+            <div class="post">
+                <div class="post-author">
+
+                    <img src="images/user-3.jpg" alt="">
+                    <div>
+                        <h1>Denis Ruparel</h1>
+                        <small>Student at Charotar University Of Science And Technology | CSE'26</small>
+                        <small>2mo •
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe-americas" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                            </svg></small>
+                    </div>
+                </div>
+                <p>🚀 Excited to announce my recent achievement in the dynamic world of cloud computing! 🌐 I am
+                    thrilled to share that I have successfully earned the Google Cloud Certificate in Google Drive, a
+                    testament to my commitment to staying at the forefront of technological advancements.
+                    <br><br>
+                    🔍 As a certified Google Cloud professional, I bring a wealth of knowledge in leveraging Google
+                    Drive to optimize data storage, collaboration, and accessibility. My proficiency extends to
+                    harnessing the power of Google Cloud to streamline workflows, enhance productivity, and drive
+                    innovation in cloud-based solutions.
+                    <br><br>
+                    🌟 My journey in acquiring this certification has not only deepened my technical expertise but has
+                    also fueled my passion for continuous learning. I am dedicated to staying abreast of emerging
+                    technologies and industry trends, ensuring that I can contribute effectively to any project or team.
+                    <br><br>
+                    🤝 Let's connect! I am eager to explore opportunities where I can apply my skills in cloud
+                    computing, Google Drive, and related technologies to contribute to the success of forward-thinking
+                    organizations. Feel free to reach out if you're interested in connecting, collaborating, or
+                    discussing the exciting possibilities within the realm of cloud solutions!
+                    <br><br>
+                </p>
+                <div class="hashtag">
+                    <a href="#">
+                        #GoogleCloud #CloudComputing #Certification #GoogleDrive #TechEnthusiast #ContinuousLearner
+                        #Innovation #Collaboration 🚀</a>
+                </div>
+                <img src="images/post-3.jpg" height="100%" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/like.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">Cisco and 10.3K others</span>
+                    </div>
+                    <span>1.2K comments &middot;320 reposts</span>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="images/thumbsup.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/speech-bubble.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blank">
+                <hr>
+            </div>
+            <div class="post">
+                <div class="post-author">
+
+                    <img src="images/user-2.jpg" alt="">
+                    <div>
+                        <h1>Shradhha Khapra</h1>
+                        <small>Co-Founder Of Apna College</small>
+                        <small>4mo •
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe-americas" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                            </svg></small>
+                    </div>
+                </div>
+                <p>Where can I learn C++ & DSA for placements/ internships?
+                    <br><br>
+                    I am targeting big tech(Amazon, Google, Microsoft), can I get their solved PYQs for practice too?
+                    <br><br>
+                    How to solve lots of DSA Qs while doing the topics?
+                    <br><br>
+                    What if I get doubts, will be they be solved?
+
+                    Can someone also help me in resume building, getting referrals, off campus process & other things?
+
+                    A one stop solution for all these Qs : the new ‘C++ DSA’ batch of Apna College.
+                    <br><br>
+                    And excited to share with you that I’ll be the teacher there❤️
+                    <br><br>
+                    Starting from April. <br><br>
+                </p>
+                <div class="hashtag">
+                    <a href="#">#ApnaCollege #C++ #OOP #Programming #development</a>
+                </div>
+                <img src="images/post-2.jpg" height="100%" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/like.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">Microsoft and 108K others</span>
+                    </div>
+                    <span>4K comments &middot;590 reposts</span>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="images/thumbsup.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/speech-bubble.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blank">
+        </div>
+    </div>
+
+
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h1>Trending News</h1>
+                <a href="#">India Wins 2024 T20 World Cup</a>
+                <span>3h ago &middot; 10,234 readers</span>
+
+                <a href="#">GCCs step up veteran hiring</a>
+                <span>11h ago &middot; 6,540 readers</span>
+
+                <a href="#">Insurance firms boost hiring</a>
+                <span>6h ago &middot; 490 readers</span>
+
+                <a href="#">Shopping choices getting harder</a>
+                <span>5h ago &middot; 1,671 readers</span>
+
+                <a href="#">Grocery stores get tech makeover</a>
+                <span>1h ago &middot; 521 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>apple SIRI</zp>
+                <div>
+                    <img src="images/user-1.jpg">
+                    <img src="images/apple-logo.jpg">
+                </div>
+                <b>Apple's phones dominates premium market </b>
+                <a href="#" class="ad-link">Leran More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App </a>
+                <a href="#">More</a>
+
+
+                <div class="copyright">
+                    <img src="images/logo.png" alt="">
+                    <p>LinkedIn Corporation &#169; 2024. All rights reserved</p>
+
+
+                </div>
+
+
+            </div>
+            <script>
+                let profileMenu = document.getElementById("profileMenu");
+                function toggleMenu() {
+                    profileMenu.classList.toggle("open-menu");
+                }
+            </script>
+ <script>
+
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+
+    if(sideActivity.classList.contains("open-activity")){
+        moreLink.innerHTML = "Show Less <b><-</b>";
+    }
+    else{
+        moreLink.innerHTML = "Show More <b>-></b>";
+    }
+}
+</script>
+<script src="script.js"></script> 
+        </body>
+
+</html>
